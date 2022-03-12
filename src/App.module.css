@@ -1,0 +1,8 @@
+.card {
+  padding: 2rem;
+  background-color: lightslategray;
+}
+
+.card .text {
+  text-align: center;
+}

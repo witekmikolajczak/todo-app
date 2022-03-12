@@ -1,0 +1,20 @@
+.form {
+  display: flex;
+}
+.form input {
+  background-color: black;
+  border: 2px solid lightslategray;
+  border-radius: 10px;
+  text-align: center;
+  height: 2.5rem;
+  width: 100%;
+  margin-right: 2rem;
+  color: lightslategray;
+}
+
+.form button {
+  border: none;
+  border-radius: 10px;
+  width: 4rem;
+  background-color: lightsalmon;
+}

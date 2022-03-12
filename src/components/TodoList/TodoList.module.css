@@ -1,0 +1,7 @@
+.todo-list {
+  margin-top: 1rem;
+  width: 100%;
+  height: 3rem;
+  border: 1px solid lightgrey;
+  border-radius: 1rem;
+}
