@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 
 import Card from "./components/UI/Card/Card";
 import Input from "./components/Input/Input";
@@ -12,15 +12,19 @@ function App() {
 
   const addTodoHandler = (todo) => {
     setTodo((prevTodo) => {
-      return [...prevTodo, { todo: todo }];
+      return [...prevTodo, { id: Math.random(), todo: todo }];
     });
+    console.log(todo);
   };
+
+  const updateTodo = () => {};
+  const checkTodo = () => {};
 
   return (
     <Card className={classes.card}>
       <Text title="Todo-List" className={classes.text} />
       <Input onAddTodo={addTodoHandler} />
-      <TodoList todo={todo} />
+      <TodoList todo={todo} setTodo={setTodo} />
     </Card>
   );
 }
