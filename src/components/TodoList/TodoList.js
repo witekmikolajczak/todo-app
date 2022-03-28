@@ -14,10 +14,9 @@ const TodoList = ({ todo, setTodo }) => {
         <div className={classes["todo-list"]} key={todo.id}>
           <div className={classes.wrapper}>
             <p>{todo.todo}</p>
-            {console.log(todo.todo)}
             <div className={classes.icons}>
-              {/* <FontAwesomeIcon icon={faPen} />
-              <FontAwesomeIcon icon={faCheck} /> */}
+              <FontAwesomeIcon icon={faPen} />
+              <FontAwesomeIcon icon={faCheck} />
               <FontAwesomeIcon
                 icon={faTrash}
                 onClick={() => onDeleteTodo(todo)}
